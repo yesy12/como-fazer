@@ -1,0 +1,16 @@
+<%- include('../header') %>
+<br>
+
+<form method="post" action="/categorias/editar/<%= categoria.id %>">
+<div class="form-group">
+	<label for="categoria">Categoria</label>
+	<input placeholder="Edite o nome da categoria" name="categoria"
+value="<%= categoria.categoria %>"
+autofocus type="text" class="form-control" id="categoria"> <br>
+</div>	
+
+        <button type="submit" class="btn btn-primary">Salvar</button>
+</form>
+
+
+<%- include('../footer') %>
