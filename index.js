@@ -26,10 +26,6 @@ app.get('/',async(req,res) =>{
 app.use('/categorias',categorias);
 app.use('/publicacoes',publicacoes);
 
-app.listen(port,(error) => {
-	if(error){
-console.log("ERROR",error);
-	}else{
-	console.log("Como-Fazer Server is running on port:",port);
-	}
+app.listen(process.env.PORT,function(){
+	console.log("COMO-fazer starting ...");
 })
