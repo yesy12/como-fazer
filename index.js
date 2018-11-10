@@ -13,9 +13,7 @@ app.use(bodyParser.urlencoded() );
 
 const linkGet='https://como-fazer-1f63f.firebaseio.com/';
 
-const port =80;
-
-
+const port = process.env.PORT || 3000;
 
 app.get('/',async(req,res) =>{
 	const content= await axios.get(linkGet+"teste.json");
