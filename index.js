@@ -7,7 +7,6 @@ const publicacoes= require('./routes/publicacoes');
 
 const axios=require('axios');
 
-
 app.set('view engine','ejs');
 app.use(bodyParser.urlencoded() );
 
